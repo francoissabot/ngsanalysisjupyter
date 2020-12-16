@@ -1,0 +1,20 @@
+# An example of extension of the jupyter stack 'base-notebook'
+# with pip modules ('pip install ...') and their system dependancies ('apt-get install -y ...')
+FROM jupyter/base-notebook
+USER root
+RUN apt-get update
+RUN apt-get install -y python3-pyqt5 pyqt5-dev-tools qttools5-dev-tools
+RUN pip install PyQt5 ete3 owlready2 pyproteinsExt ipympl
+
+#Dedicated install to NGS analyses
+RUN apt install samtools bwa minimap2 sniffles unzip
+RUN conda install -c bioconda gatk4
+RUN python3 -m pip install bash_kernel
+RUN python3 -m bash_kernel.install
+
+#Data for teaching
+RUN mkdir -p /data/ && chmod 775 /data/ && cd /data/
+RUN wget DATA && unzip DATA && chmod 755 DATAfolder
+
+#Docs for teaching
+RUN cd && wget NOTEBOOKzip && unzip NOTEBOOKzip
