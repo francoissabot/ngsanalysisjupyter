@@ -13,8 +13,8 @@ RUN python3 -m pip install bash_kernel
 RUN python3 -m bash_kernel.install
 
 #Data for teaching
-RUN mkdir -p /data/ && chmod 775 /data/ && cd /data/
-RUN wget DATA && unzip DATA && chmod 755 DATAfolder
+RUN mkdir -p data/ && chmod 775 data/ && cd data/
+RUN wget https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip 
 
 #Docs for teaching
 RUN cd && wget NOTEBOOKzip && unzip NOTEBOOKzip
