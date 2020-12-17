@@ -16,12 +16,11 @@ RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils
 RUN conda install -c bioconda gatk4
 
 
-#RUN wget http://membres-timc.imag.fr/Olivier.Francois/snmf/files/sNMF_CL_v1.2.zip && unzip sNMF_CL_v1.2.zip
+RUN cd /opt/ && wget http://membres-timc.imag.fr/Olivier.Francois/snmf/files/sNMF_CL_v1.2.zip && unzip sNMF_CL_v1.2.zip && cd
 
 
 #Data for teaching
-#RUN mkdir -p data/ && chmod 775 data/ && cd data/
-#RUN wget https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip 
+RUN cd work/ && wget --no-check-certificate https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip && rm toyset.zip
 
 #Docs for teaching
-# RUN cd && wget NOTEBOOKzip && unzip NOTEBOOKzip
+# RUN wget NOTEBOOKzip && unzip NOTEBOOKzip
