@@ -8,15 +8,15 @@
 source /etc/profile.d/ifb.sh
 
 # Selection of Jupyter stack
-APP_IMG="jupyter/datascience-notebook"
+APP_IMG="ngsanalysisjupyter"
 JUPYTER_STACK=$(ss-get --timeout=3 jupyter_stack)
-if [ -n "$JUPYTER_STACK" ]; then
-    APP_IMG="jupyter/${JUPYTER_STACK}"
-fi
+#if [ -n "$JUPYTER_STACK" ]; then
+#    APP_IMG="jupyter/${JUPYTER_STACK}"
+#fi
 
 # Launch JupyterLab instead of Jupyter Notebook
-JUPYTER_ENABLE_LAB=' '
-#JUPYTER_ENABLE_LAB='-e JUPYTER_ENABLE_LAB=yes'
+#JUPYTER_ENABLE_LAB=' '
+JUPYTER_ENABLE_LAB='-e JUPYTER_ENABLE_LAB=yes'
 
 # Self-signed certificate inside the container
 APP_PORTS="-p 443:8888"
