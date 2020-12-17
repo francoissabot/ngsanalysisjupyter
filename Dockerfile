@@ -1,9 +1,9 @@
-# An example of extension of the jupyter stack 'base-notebook'
+# An example of extension of the jupyter stack 'datascience-notebook'
 # with pip modules ('pip install ...') and their system dependancies ('apt-get install -y ...')
 FROM jupyter/datascience-notebook
 USER root
 RUN apt-get update
-RUN apt-get install -y python3-pyqt5 pyqt5-dev-tools qttools5-dev-tools zlib
+RUN apt-get install -y python3-pyqt5 pyqt5-dev-tools qttools5-dev-tools
 RUN pip install PyQt5 ete3 owlready2 pyproteinsExt ipympl
 #RUN pip install jupyterlab
 
