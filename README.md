@@ -26,6 +26,8 @@ Main jupyter stacks are:
 * Minimap2
 * Sniffles
 * sNMF
+* Abyss
+* Raven
 
 ## Contact
 
