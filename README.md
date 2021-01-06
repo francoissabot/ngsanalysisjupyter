@@ -19,15 +19,15 @@ Main jupyter stacks are:
 
 ## Tools
 
-* Jupyter notebook/lab [[ref](https://jupyter.org)]
-* BWA
-* SAMtools
-* GATK (including Picard-tools)
-* Minimap2
-* Sniffles
-* sNMF
-* Abyss
-* Raven
+* [Jupyter notebook/lab] (https://jupyter.org)
+* [BWA](https://github.com/lh3/bwa)
+* [SAMtools](http://www.htslib.org/)
+* [GATK - including Picard-tools](https://gatk.broadinstitute.org/hc/en-us)
+* [Minimap2](https://github.com/lh3/minimap2)
+* [Sniffles](https://github.com/fritzsedlazeck/Sniffles)
+* [sNMF](http://membres-timc.imag.fr/Olivier.Francois/snmf/index.htm)
+* [Abyss](https://github.com/bcgsc/abyss)
+* [Raven](https://github.com/lbcb-sci/raven)
 
 ## Contact
 
@@ -35,8 +35,8 @@ Main jupyter stacks are:
 
 ## Developpers
 
-* Francois Sabot [SouthGreen](https://southgreen.fr)
-* Christine Tranchant-Dubreuil [SouthGreen](https://southgreen.fr)
+* Francois Sabot [SouthGreen Platform](https://southgreen.fr)
+* Christine Tranchant-Dubreuil [SouthGreen Platform](https://southgreen.fr)
 
 ## App data
 
