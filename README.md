@@ -19,7 +19,7 @@ Main jupyter stacks are:
 
 ## Tools
 
-* [Jupyter notebook/lab] (https://jupyter.org)
+* [Jupyter notebook/lab](https://jupyter.org)
 * [BWA](https://github.com/lh3/bwa)
 * [SAMtools](http://www.htslib.org/)
 * [GATK - including Picard-tools](https://gatk.broadinstitute.org/hc/en-us)
