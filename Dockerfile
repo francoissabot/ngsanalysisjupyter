@@ -17,11 +17,11 @@ RUN conda install -c bioconda gatk4
 RUN conda install -c bioconda raven-assembler
 
 
-RUN cd /opt/ && wget http://membres-timc.imag.fr/Olivier.Francois/snmf/files/sNMF_CL_v1.2.zip && unzip sNMF_CL_v1.2.zip && cd
+RUN cd /opt/ && wget http://membres-timc.imag.fr/Olivier.Francois/snmf/files/sNMF_CL_v1.2.zip && unzip sNMF_CL_v1.2.zip && chmod -R 775 sNMF_CL_v1.2 && rm -Rf sNMF_CL_v1.2.zip && cd
 
 
 #Data for teaching
-RUN cd mydatalocal/ && wget --no-check-certificate https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip && rm toyset.zip && chmod -R 775 toyset
+RUN cd /ifb/data/mydatalocal/ && wget --no-check-certificate https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip && rm toyset.zip && chmod -R 775 toyset
 
 #Docs for teaching
 # RUN wget NOTEBOOKzip && unzip NOTEBOOKzip
