@@ -12,12 +12,14 @@ RUN pip install bash_kernel
 RUN python3 -m bash_kernel.install
 
 #Dedicated install to NGS analyses
-RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils abyss
+RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils abyss ea-utils
 RUN conda install -c bioconda gatk4
 RUN conda install -c bioconda raven-assembler
+RUN conda install -c bioconda snmf 
+RUN pip install NanoPlot
 
 
-RUN cd /opt/ && wget http://membres-timc.imag.fr/Olivier.Francois/snmf/files/sNMF_CL_v1.2.zip && unzip sNMF_CL_v1.2.zip && chmod -R 775 sNMF_CL_v1.2 && rm -Rf sNMF_CL_v1.2.zip && cd
+
 
 
 #Data for teaching

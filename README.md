@@ -20,6 +20,8 @@ Main jupyter stacks are:
 ## Tools
 
 * [Jupyter notebook/lab](https://jupyter.org)
+* [fastq-stats](https://expressionanalysis.github.io/ea-utils/)
+* [NanoPlot](https://github.com/wdecoster/NanoPlot)
 * [BWA](https://github.com/lh3/bwa)
 * [SAMtools](http://www.htslib.org/)
 * [GATK - including Picard-tools](https://gatk.broadinstitute.org/hc/en-us)
