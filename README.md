@@ -45,3 +45,7 @@ Main jupyter stacks are:
 * Version : 20.04
 * OS : Ubuntu
 * OS version : 20.04
+
+## Licence
+
+Licensed under GPLv3
