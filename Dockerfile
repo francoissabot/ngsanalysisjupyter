@@ -19,11 +19,8 @@ RUN conda install -c bioconda snmf
 RUN pip install NanoPlot
 
 
-
-
-
 #Data for teaching
-RUN cd /ifb/data/mydatalocal/ && wget --no-check-certificate https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip && rm toyset.zip && chmod -R 775 toyset
+#RUN cd /ifb/data/mydatalocal/ && wget --no-check-certificate https://bioinfo-storage.ird.fr/teachingNGS/toyset.zip && unzip toyset.zip && rm toyset.zip && chmod -R 775 toyset
 
 #Docs for teaching
 # RUN wget NOTEBOOKzip && unzip NOTEBOOKzip
