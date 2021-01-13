@@ -12,7 +12,7 @@ RUN pip install bash_kernel
 RUN python3 -m bash_kernel.install
 
 #Dedicated install to NGS analyses
-RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils abyss ea-utils
+RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils abyss ea-utils vcftools
 RUN conda install -c bioconda gatk4
 RUN conda install -c bioconda raven-assembler
 RUN conda install -c bioconda snmf 
