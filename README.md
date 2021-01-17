@@ -21,15 +21,19 @@ Main jupyter stacks are:
 
 * [Jupyter notebook/lab](https://jupyter.org)
 * [fastq-stats](https://expressionanalysis.github.io/ea-utils/)
+* [seqtk](https://github.com/lh3/seqtk)
 * [NanoPlot](https://github.com/wdecoster/NanoPlot)
 * [BWA](https://github.com/lh3/bwa)
 * [SAMtools](http://www.htslib.org/)
 * [GATK - including Picard-tools](https://gatk.broadinstitute.org/hc/en-us)
+* [VCFtools](https://vcftools.github.io/man_latest.html)
 * [Minimap2](https://github.com/lh3/minimap2)
 * [Sniffles](https://github.com/fritzsedlazeck/Sniffles)
+* [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR/)
 * [sNMF](http://membres-timc.imag.fr/Olivier.Francois/snmf/index.htm)
 * [Abyss](https://github.com/bcgsc/abyss)
 * [Raven](https://github.com/lbcb-sci/raven)
+
 
 ## Contact
 
