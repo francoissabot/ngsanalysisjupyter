@@ -16,6 +16,7 @@ RUN apt-get install -y samtools bwa bedtools minimap2 sniffles unzip ea-utils ab
 RUN conda install -c bioconda gatk4
 RUN conda install -c bioconda raven-assembler
 RUN conda install -c bioconda snmf 
+RUN conda install -c survivor
 RUN pip install NanoPlot
 
 
